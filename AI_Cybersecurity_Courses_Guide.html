@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Cybersecurity Courses: Beginner to Advanced Path</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #1e3c72;
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h3 {
+            color: #2a5298;
+            font-size: 1.5em;
+            margin: 30px 0 15px 0;
+        }
+
+        h4 {
+            color: #444;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+        }
+
+        .course-card {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .course-card h3 {
+            margin-top: 0;
+            color: #1e3c72;
+        }
+
+        .course-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .meta-item {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .meta-label {
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 15px 0;
+            border-radius: 3px;
+        }
+
+        .roadmap {
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .phase {
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 6px solid #667eea;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .phase h4 {
+            color: #1e3c72;
+            margin-top: 0;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        th {
+            background: #1e3c72;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .video-section {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .video-card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .sources {
+            background: #f8f9fa;
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+
+        .sources h2 {
+            border-bottom-color: #28a745;
+        }
+
+        .sources ul {
+            columns: 2;
+            column-gap: 30px;
+        }
+
+        .sources li {
+            break-inside: avoid;
+            margin: 10px 0;
+        }
+
+        .sources a {
+            color: #2a5298;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .sources a:hover {
+            color: #667eea;
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin: 5px 5px 5px 0;
+        }
+
+        .badge-beginner {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .badge-intermediate {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .badge-advanced {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .badge-deloitte {
+            background: #86efac;
+            color: #14532d;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            .course-meta {
+                grid-template-columns: 1fr;
+            }
+
+            .sources ul {
+                columns: 1;
+            }
+
+            main {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Cybersecurity Courses</h1>
+            <p>Beginner to Advanced Path for Deloitte Cyber Security Senior Manager</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#beginner">Beginner Courses</a></li>
+                <li><a href="#intermediate">Intermediate</a></li>
+                <li><a href="#advanced">Advanced</a></li>
+                <li><a href="#deloitte">Deloitte Programs</a></li>
+                <li><a href="#roadmap">Learning Roadmap</a></li>
+                <li><a href="#videos">Video Resources</a></li>
+                <li><a href="#sources">Sources</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="summary">
+                <h2>Executive Summary</h2>
+                <p>This comprehensive guide provides a structured roadmap for transitioning from beginner to advanced levels in AI-powered cybersecurity. The courses are carefully selected for cybersecurity professionals, particularly those in senior management positions at organizations like Deloitte, looking to integrate AI and machine learning into their security operations.</p>
+
+                <div class="highlight">
+                    <strong>Key Insight:</strong> The AI cybersecurity field is rapidly evolving. This guide includes courses from leading institutions (SANS, ISC2, Johns Hopkins) and Deloitte-specific programs to ensure both technical competency and organizational alignment.
+                </div>
+            </section>
+
+            <section id="beginner">
+                <h2>Beginner-Friendly Courses</h2>
+
+                <div class="course-card">
+                    <h3>1. ISC2 AI for Cybersecurity Course</h3>
+                    <span class="badge badge-beginner">Beginner</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            ISC2
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Duration</span>
+                            3 hours on-demand
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">CPE Credits</span>
+                            3 credits
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Prerequisites</span>
+                            None
+                        </div>
+                    </div>
+
+                    <p><strong>Description:</strong> Foundational course designed for cybersecurity professionals at any level who want to develop an operational perspective for applying AI to cybersecurity. No prerequisite knowledge required.</p>
+
+                    <p><strong>Why it's great for beginners:</strong> Enables confident engagement with AI concepts from day one without prior AI experience.</p>
+
+                    <a href="https://www.isc2.org/professional-development/courses/ai-for-cybersecurity" class="btn" target="_blank">Learn More</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>2. IBM Generative AI for Cybersecurity Professionals (Coursera)</h3>
+                    <span class="badge badge-beginner">Beginner to Intermediate</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            IBM via Coursera
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Format</span>
+                            3-course specialization
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Cost</span>
+                            Free to audit
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Learning Type</span>
+                            Hands-on
+                        </div>
+                    </div>
+
+                    <p><strong>Key Topics:</strong></p>
+                    <ul>
+                        <li>Generative AI introduction</li>
+                        <li>Prompt engineering</li>
+                        <li>Career advancement in cybersecurity with AI</li>
+                    </ul>
+
+                    <p><strong>Why it's great for beginners:</strong> Emphasizes applied learning with hands-on activities in real-world scenarios.</p>
+
+                    <a href="https://www.coursera.org/specializations/generative-ai-for-cybersecurity-professionals" class="btn" target="_blank">Enroll Now</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>3. Gen AI in Cybersecurity - IIT Kanpur (E&ICT Academy)</h3>
+                    <span class="badge badge-beginner">Beginner-Friendly</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            IIT Kanpur E&ICT Academy
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Duration</span>
+                            30 hours
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Cost</span>
+                            ~$215 USD
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Format</span>
+                            Hybrid (self-paced + live)
+                        </div>
+                    </div>
+
+                    <p><strong>Description:</strong> Master Generative AI applications in cybersecurity with practical skills development. No prior coding required.</p>
+
+                    <p><strong>Certificate:</strong> IIT Kanpur E&ICT Academy Certificate</p>
+
+                    <p><strong>Why it's great for beginners:</strong> No coding background needed; combines theory with practical implementation.</p>
+
+                    <a href="https://www.eicta.iitk.ac.in/courses/gen-ai-in-cyber-security" class="btn" target="_blank">Learn More</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>4. InfosecTrain AI-Powered Cybersecurity Training</h3>
+                    <span class="badge badge-beginner">Beginner to Intermediate</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            InfosecTrain
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Format</span>
+                            Online training
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Balance</span>
+                            50:50 theory & practice
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Progression</span>
+                            Basic Python → Real-world
+                        </div>
+                    </div>
+
+                    <p><strong>Why it's great for beginners:</strong> Gradual progression from fundamental AI concepts to advanced topics with balanced theory and practice.</p>
+
+                    <a href="https://www.infosectrain.com/courses/artificial-intelligence-ai-for-cyber-security-professionals-training/" class="btn" target="_blank">Enroll Now</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>5. AI Security Certification - Practical AI Security Training</h3>
+                    <span class="badge badge-beginner">Beginner-Friendly</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            Modern Security
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Prerequisites</span>
+                            None
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Format</span>
+                            Hands-on projects
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Projects</span>
+                            Build security tools with LLMs
+                        </div>
+                    </div>
+
+                    <p><strong>Why it's great for beginners:</strong> Starts from absolute basics with hands-on project experience building real security tools.</p>
+
+                    <a href="https://www.modernsecurity.io/courses/ai-security-certification" class="btn" target="_blank">Learn More</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>6. The Complete Artificial Intelligence for Cyber Security (Udemy)</h3>
+                    <span class="badge badge-beginner">Beginner</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            Udemy
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Prerequisites</span>
+                            None (basic Python helpful)
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Format</span>
+                            Self-paced video
+                        </div>
+                    </div>
+
+                    <p><strong>Tools Covered:</strong> Wireshark, Splunk, AWS GuardDuty, VirtualBox, ChatGPT for cybersecurity</p>
+
+                    <p><strong>Why it's great for beginners:</strong> Comprehensive coverage starting from zero with practical tool training.</p>
+
+                    <a href="https://www.udemy.com/course/the-complete-artificial-intelligence-for-cyber-security-2021/" class="btn" target="_blank">Enroll Now</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>7. Zero To Mastery - AI and Cybersecurity</h3>
+                    <span class="badge badge-beginner">Beginner</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            Zero To Mastery
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Prerequisites</span>
+                            No prior knowledge required
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Format</span>
+                            Self-paced online
+                        </div>
+                    </div>
+
+                    <p><strong>Why it's great for beginners:</strong> Designed specifically for those with no background in either AI or cybersecurity.</p>
+
+                    <a href="https://zerotomastery.io/courses/ai-and-cybersecurity/" class="btn" target="_blank">Learn More</a>
+                </div>
+            </section>
+
+            <section id="intermediate">
+                <h2>Intermediate Level Courses</h2>
+
+                <div class="course-card">
+                    <h3>8. AI for Cybersecurity Specialization (Coursera)</h3>
+                    <span class="badge badge-intermediate">Intermediate</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            Multiple universities via Coursera
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Format</span>
+                            Multi-course specialization
+                        </div>
+                    </div>
+
+                    <p><strong>Key Learning Outcomes:</strong></p>
+                    <ul>
+                        <li>Apply supervised and unsupervised ML for threat detection</li>
+                        <li>Neural networks for advanced security solutions</li>
+                        <li>Data extraction, analysis, and visualization</li>
+                    </ul>
+
+                    <a href="https://www.coursera.org/specializations/ai-for-cybersecurity" class="btn" target="_blank">Enroll Now</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>9. Pluralsight - AI and Machine Learning in Cybersecurity</h3>
+                    <span class="badge badge-intermediate">Intermediate</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            Pluralsight
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Format</span>
+                            Video-based learning path
+                        </div>
+                    </div>
+
+                    <a href="https://www.pluralsight.com/courses/ai-machine-learning-cybersecurity" class="btn" target="_blank">Learn More</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>10. Johns Hopkins University - AI for Cybersecurity Certificate</h3>
+                    <span class="badge badge-intermediate">Post-Graduate/Professional</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            Johns Hopkins University
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Format</span>
+                            3 comprehensive courses
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Capstone</span>
+                            Required for certificate
+                        </div>
+                    </div>
+
+                    <p><strong>Advanced Topics:</strong></p>
+                    <ul>
+                        <li>AI-driven fraud prevention</li>
+                        <li>Malware analysis</li>
+                        <li>Generative Adversarial Networks (GANs)</li>
+                        <li>Creating ML and DL models for IoT botnet detection</li>
+                        <li>Feature engineering for ML</li>
+                        <li>Optimizing raw data for DL</li>
+                    </ul>
+
+                    <div class="highlight">
+                        <strong>Ideal for:</strong> Deloitte Senior Managers looking for university-level credentials with advanced practical applications.
+                    </div>
+
+                    <a href="https://lifelonglearning.jhu.edu/course/jhu-online-certificate-program-cybersecurity/" class="btn" target="_blank">Learn More</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>11. University of Chicago - Machine Learning for Cybersecurity Certificate</h3>
+                    <span class="badge badge-intermediate">Intermediate to Advanced</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            University of Chicago Professional Education
+                        </div>
+                    </div>
+
+                    <p><strong>Target Audience:</strong></p>
+                    <ul>
+                        <li>Information Security Managers</li>
+                        <li>DevOps Engineers</li>
+                        <li>Software Developers</li>
+                        <li>System Administrators</li>
+                    </ul>
+
+                    <a href="https://professional.uchicago.edu/lp/professional-education/machine-learning-cybersecurity/rfi?language_content_entity=en" class="btn" target="_blank">Learn More</a>
+                </div>
+            </section>
+
+            <section id="advanced">
+                <h2>Advanced Professional Certifications</h2>
+
+                <div class="course-card">
+                    <h3>12. SANS SEC595: Applied Data Science and AI/ML for Cybersecurity Professionals</h3>
+                    <span class="badge badge-advanced">Advanced</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            SANS Institute
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Prerequisites</span>
+                            Python programming experience
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Duration</span>
+                            Multi-day intensive
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Certification</span>
+                            Leads to GIAC GMLE
+                        </div>
+                    </div>
+
+                    <p><strong>Focus Areas:</strong></p>
+                    <ul>
+                        <li>Statistical models for security challenges</li>
+                        <li>Probabilistic tools</li>
+                        <li>Neural networks</li>
+                        <li>Real-world security problem solving with AI</li>
+                    </ul>
+
+                    <p><strong>Ideal For:</strong> SOC Analysts, Threat Hunters, Security Architects, Incident Responders</p>
+
+                    <div class="highlight">
+                        <strong>Why it's ideal for senior professionals:</strong> Industry-leading hands-on training with practical application to real security challenges.
+                    </div>
+
+                    <a href="https://www.sans.org/cyber-security-courses/applied-data-science-machine-learning" class="btn" target="_blank">Learn More</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>13. GIAC Machine Learning Engineer (GMLE) Certification</h3>
+                    <span class="badge badge-advanced">Advanced</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            GIAC
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Prerequisites</span>
+                            SEC595 or equivalent
+                        </div>
+                    </div>
+
+                    <p><strong>Validates:</strong></p>
+                    <ul>
+                        <li>Practical data science knowledge</li>
+                        <li>Statistics and probability expertise</li>
+                        <li>Machine learning application to cybersecurity</li>
+                        <li>Ability to solve real-world cyber security problems</li>
+                    </ul>
+
+                    <div class="highlight">
+                        <strong>Career Impact:</strong> Globally recognized credential demonstrating advanced ML engineering capabilities in cybersecurity.
+                    </div>
+
+                    <a href="https://www.giac.org/certifications/machine-learning-engineer-gmle/" class="btn" target="_blank">Learn More</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>14. Certified AI Security Professional (CAISP) - Practical DevSecOps</h3>
+                    <span class="badge badge-advanced">Advanced</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            Practical DevSecOps
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">CPE Credits</span>
+                            36 points
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Exam Format</span>
+                            5 challenges (6 hours) + 24hr report
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Credential</span>
+                            Lifetime (no renewal)
+                        </div>
+                    </div>
+
+                    <p><strong>Focus:</strong> Safeguarding AI systems</p>
+
+                    <div class="highlight">
+                        <strong>Why it's valuable:</strong> Demonstrates practical ability to secure AI systems with hands-on challenge-based assessment.
+                    </div>
+
+                    <a href="https://www.practical-devsecops.com/certified-ai-security-professional/" class="btn" target="_blank">Learn More</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>15. ISC2 Building AI Strategy Certificate</h3>
+                    <span class="badge badge-advanced">Advanced/Strategic</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            ISC2
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Duration</span>
+                            16 hours (6 courses)
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">CPE Credits</span>
+                            16 credits (ISC2 members)
+                        </div>
+                    </div>
+
+                    <p><strong>Focus Areas:</strong></p>
+                    <ul>
+                        <li>AI fundamentals</li>
+                        <li>Managing AI-related risks</li>
+                        <li>Secure-by-design initiatives</li>
+                        <li>Evolving cyber workforce adaptation</li>
+                    </ul>
+
+                    <div class="highlight">
+                        <strong>Perfect for:</strong> Senior managers developing organizational AI security strategies.
+                    </div>
+
+                    <a href="https://www.isc2.org/Insights/2025/07/ISC2-Launches-AI-Certificate" class="btn" target="_blank">Learn More</a>
+                </div>
+            </section>
+
+            <section id="deloitte">
+                <h2>Deloitte-Specific Programs</h2>
+
+                <div class="course-card">
+                    <h3>16. Deloitte Advanced Cyber Training</h3>
+                    <span class="badge badge-deloitte">Deloitte Program</span>
+                    <span class="badge badge-intermediate">Professional</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            Deloitte US
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Target Audience</span>
+                            Organizations & consultants
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Experience Base</span>
+                            US defense & intelligence
+                        </div>
+                    </div>
+
+                    <p><strong>Course Coverage:</strong></p>
+                    <ul>
+                        <li>Threat hunting</li>
+                        <li>Network defense</li>
+                        <li>Python programming for cybersecurity</li>
+                    </ul>
+
+                    <div class="highlight">
+                        <strong>Internal Benefit:</strong> Direct alignment with Deloitte's cybersecurity practice standards.
+                    </div>
+
+                    <a href="https://www.deloitte.com/us/en/Industries/government-public/about/advanced-cyber-training.html" class="btn" target="_blank">Learn More</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>17. Deloitte Cyber Career Accelerator</h3>
+                    <span class="badge badge-deloitte">Deloitte Program</span>
+                    <span class="badge badge-beginner">Entry to Intermediate</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            Deloitte + Flatiron School
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Duration</span>
+                            12 weeks
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Format</span>
+                            Cloud Native Computing Primer
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Cost</span>
+                            Covered by Deloitte + compensation
+                        </div>
+                    </div>
+
+                    <p><strong>Outcome:</strong> Full-time position offer in Deloitte's Cyber Practice upon successful completion</p>
+
+                    <a href="https://flatironschool.com/enterprise/deloitte-cyber-career-accelerator-2/" class="btn" target="_blank">Learn More</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>18. Deloitte's Cyber AI Services & Framework</h3>
+                    <span class="badge badge-deloitte">Deloitte Program</span>
+                    <span class="badge badge-advanced">Enterprise/Strategic</span>
+
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Provider</span>
+                            Deloitte Consulting
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Framework</span>
+                            CSAI (Cybersecurity for AI and GenAI)
+                        </div>
+                    </div>
+
+                    <p><strong>Focus:</strong> Integrating AI and automation into cyber operations responsibly and effectively</p>
+
+                    <div class="highlight">
+                        <strong>Strategic Value:</strong> Understanding Deloitte's proprietary frameworks for client engagements.
+                    </div>
+
+                    <a href="https://www.deloitte.com/us/en/services/consulting/services/ai-and-cybersecurity-solutions.html" class="btn" target="_blank">Learn More</a>
+                </div>
+            </section>
+
+            <section id="roadmap">
+                <h2>Learning Path Roadmap</h2>
+
+                <div class="roadmap">
+                    <div class="phase">
+                        <h4>Phase 1: Foundation (0-3 months)</h4>
+                        <p><strong>Goal:</strong> Build fundamental understanding of AI and its applications in cybersecurity</p>
+
+                        <p><strong>Recommended Path:</strong></p>
+                        <ol>
+                            <li>Start with <strong>ISC2 AI for Cybersecurity Course</strong> (3 hours) - Quick foundation</li>
+                            <li>Follow with <strong>IBM Generative AI for Cybersecurity</strong> (Coursera) - Applied learning</li>
+                            <li>Complete <strong>IIT Kanpur Gen AI in Cybersecurity</strong> (30 hours) - Deeper technical skills</li>
+                            <li>Supplement with <strong>Zero To Mastery</strong> or <strong>Udemy Complete AI course</strong> - Fill knowledge gaps</li>
+                        </ol>
+
+                        <p><strong>Expected Outcomes:</strong></p>
+                        <ul>
+                            <li>Understand AI/ML fundamentals</li>
+                            <li>Recognize AI applications in threat detection</li>
+                            <li>Basic hands-on experience with AI security tools</li>
+                            <li>Confident engagement with AI terminology and concepts</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase">
+                        <h4>Phase 2: Intermediate Development (3-6 months)</h4>
+                        <p><strong>Goal:</strong> Develop practical skills in applying ML to cybersecurity challenges</p>
+
+                        <p><strong>Recommended Path:</strong></p>
+                        <ol>
+                            <li>Complete <strong>Johns Hopkins AI for Cybersecurity Certificate</strong> - Advanced techniques</li>
+                            <li>Take <strong>InfosecTrain AI-Powered Cybersecurity</strong> - Balanced theory and practice</li>
+                            <li>Pursue <strong>Modern Security AI Security Certification</strong> - Hands-on LLM security projects</li>
+                            <li>Study <strong>Pluralsight AI and ML in Cybersecurity</strong> - Supplementary skills</li>
+                        </ol>
+
+                        <p><strong>Expected Outcomes:</strong></p>
+                        <ul>
+                            <li>Build phishing detection systems</li>
+                            <li>Analyze network activity with ML</li>
+                            <li>Create anomaly detection models</li>
+                            <li>Implement AI-driven fraud prevention</li>
+                            <li>Work with GANs and advanced neural networks</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase">
+                        <h4>Phase 3: Advanced Specialization (6-12 months)</h4>
+                        <p><strong>Goal:</strong> Achieve expert-level proficiency and professional certification</p>
+
+                        <p><strong>Recommended Path:</strong></p>
+                        <ol>
+                            <li>Complete <strong>SANS SEC595</strong> training - Industry-leading hands-on experience</li>
+                            <li>Obtain <strong>GIAC GMLE Certification</strong> - Validate ML engineering expertise</li>
+                            <li>Pursue <strong>Certified AI Security Professional (CAISP)</strong> - Advanced AI system security</li>
+                            <li>Complete <strong>ISC2 Building AI Strategy Certificate</strong> - Strategic leadership</li>
+                            <li>Engage with <strong>Deloitte Advanced Cyber Training</strong> - Internal alignment</li>
+                        </ol>
+
+                        <p><strong>Expected Outcomes:</strong></p>
+                        <ul>
+                            <li>Solve real-world security problems with ML</li>
+                            <li>Lead AI security initiatives</li>
+                            <li>Develop organizational AI security strategies</li>
+                            <li>Build and deploy production-grade AI security solutions</li>
+                            <li>Contribute to threat hunting with AI/ML techniques</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase">
+                        <h4>Phase 4: Continuous Learning & Specialization (Ongoing)</h4>
+                        <p><strong>Goal:</strong> Stay current with emerging AI security trends and technologies</p>
+
+                        <p><strong>Recommended Activities:</strong></p>
+                        <ol>
+                            <li>Follow <strong>SANS AI/ML learning roadmap</strong> for new courses</li>
+                            <li>Participate in <strong>AI security conferences</strong> (Black Hat, BSides, SAINTCON)</li>
+                            <li>Engage with <strong>Deloitte's CSAI Framework</strong> updates</li>
+                            <li>Pursue advanced topics:
+                                <ul>
+                                    <li>Offensive AI techniques</li>
+                                    <li>AI red teaming</li>
+                                    <li>LLM security and jailbreaking</li>
+                                    <li>AI disinformation operations</li>
+                                    <li>Reinforcement learning for security</li>
+                                </ul>
+                            </li>
+                        </ol>
+
+                        <p><strong>Expected Outcomes:</strong></p>
+                        <ul>
+                            <li>Maintain cutting-edge knowledge</li>
+                            <li>Lead enterprise AI security transformations</li>
+                            <li>Mentor junior team members</li>
+                            <li>Drive innovation in Deloitte's cyber practice</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Recommended Timelines for Deloitte Senior Manager</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Track</th>
+                            <th>Duration</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Fast Track</strong></td>
+                            <td>6-9 months</td>
+                            <td>Experienced cybersecurity professionals with technical background</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Standard Track</strong></td>
+                            <td>12-15 months</td>
+                            <td>Comprehensive learning with deeper hands-on practice</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Executive Track</strong></td>
+                            <td>5-6 months + ongoing</td>
+                            <td>Senior leaders focusing on strategic oversight</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="videos">
+                <h2>Video Resources</h2>
+
+                <div class="video-section">
+                    <div class="video-card">
+                        <h3>Top AI Security YouTube Videos - November 2025</h3>
+
+                        <p><strong>Content:</strong> 30+ new AI security talks from major conferences</p>
+
+                        <p><strong>Conferences Included:</strong></p>
+                        <ul>
+                            <li>SAINTCON</li>
+                            <li>Black Hat</li>
+                            <li>BSides</li>
+                            <li>NorthSec</li>
+                            <li>Hack In The Box</li>
+                            <li>LABScon</li>
+                            <li>DevCon</li>
+                            <li>DjangoCon</li>
+                            <li>Everything Open</li>
+                        </ul>
+
+                        <p><strong>Topics Covered:</strong></p>
+                        <ul>
+                            <li>AI-driven cyber attacks</li>
+                            <li>Agentic workflows and MCP abuse</li>
+                            <li>Jailbreak tactics and guardrail failures</li>
+                            <li>LLM-enabled malware and offensive tooling</li>
+                            <li>AI disinformation operations</li>
+                            <li>Secure LLM adoption in FinTech and cloud</li>
+                            <li>Real-world research and incident response</li>
+                        </ul>
+
+                        <a href="https://medium.com/ai-security-hub/top-ai-security-youtube-videos-november-2025-5f09db69ca42" class="btn" target="_blank">View Playlist</a>
+                    </div>
+
+                    <div class="video-card">
+                        <h3>IBM Cybersecurity Trends for 2025 and Beyond</h3>
+
+                        <p><strong>Provider:</strong> IBM</p>
+                        <p><strong>Format:</strong> Free video course</p>
+
+                        <p><strong>Topics:</strong></p>
+                        <ul>
+                            <li>Emerging cybersecurity threats</li>
+                            <li>AI's impact on digital security</li>
+                            <li>Expert predictions for 2025</li>
+                        </ul>
+
+                        <a href="https://www.classcentral.com/course/youtube-cybersecurity-trends-for-2025-and-beyond-416758" class="btn" target="_blank">Watch Now</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Key Skills Development</h2>
+
+                <h3>Technical Skills You'll Acquire</h3>
+
+                <div class="phase">
+                    <h4>Beginner Level</h4>
+                    <ul>
+                        <li>AI and ML fundamentals</li>
+                        <li>Python programming basics</li>
+                        <li>Data analysis and visualization</li>
+                        <li>Understanding of supervised and unsupervised learning</li>
+                        <li>Basic neural network concepts</li>
+                        <li>Prompt engineering for security tasks</li>
+                        <li>ChatGPT and LLM applications in cybersecurity</li>
+                    </ul>
+                </div>
+
+                <div class="phase">
+                    <h4>Intermediate Level</h4>
+                    <ul>
+                        <li>Feature engineering for ML models</li>
+                        <li>Building classification and regression models</li>
+                        <li>Anomaly detection systems</li>
+                        <li>Network traffic analysis with ML</li>
+                        <li>Deep learning for security applications</li>
+                        <li>Working with frameworks (TensorFlow, PyTorch)</li>
+                        <li>Security tool integration (Wireshark, Splunk, AWS GuardDuty)</li>
+                    </ul>
+                </div>
+
+                <div class="phase">
+                    <h4>Advanced Level</h4>
+                    <ul>
+                        <li>Statistical modeling for threat detection</li>
+                        <li>Probabilistic tools and Bayesian methods</li>
+                        <li>Advanced neural networks (CNNs, RNNs, GANs)</li>
+                        <li>Reinforcement learning for security</li>
+                        <li>Large Language Model (LLM) security</li>
+                        <li>AI red teaming and adversarial ML</li>
+                        <li>Production deployment of ML security solutions</li>
+                        <li>AI system hardening and defense</li>
+                    </ul>
+                </div>
+
+                <div class="phase">
+                    <h4>Strategic & Leadership Skills</h4>
+                    <ul>
+                        <li>AI risk management</li>
+                        <li>Secure-by-design AI initiatives</li>
+                        <li>Building organizational AI security strategies</li>
+                        <li>AI governance and compliance</li>
+                        <li>Leading AI security transformation projects</li>
+                        <li>Communicating AI security concepts to non-technical stakeholders</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="cost">
+                <h2>Cost Summary</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course Level</th>
+                            <th>Estimated Cost Range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Beginner Courses</td>
+                            <td>$0 - $500 (many free options with paid certificates)</td>
+                        </tr>
+                        <tr>
+                            <td>Intermediate Courses</td>
+                            <td>$200 - $2,000</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Certifications</td>
+                            <td>$3,000 - $8,000 (SANS courses ~$8,000)</td>
+                        </tr>
+                        <tr>
+                            <td>Professional Certifications</td>
+                            <td>$500 - $2,000 per exam</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total Investment</strong></td>
+                            <td><strong>$5,000 - $15,000</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="highlight">
+                    <strong>Note:</strong> Many employers including Deloitte offer training budgets and may cover course costs as professional development.
+                </div>
+            </section>
+
+            <section id="sources" class="sources">
+                <h2>Sources</h2>
+                <ul>
+                    <li><a href="https://www.coursera.org/specializations/ai-for-cybersecurity" target="_blank">AI for Cybersecurity - Coursera</a></li>
+                    <li><a href="https://www.isc2.org/professional-development/courses/ai-for-cybersecurity" target="_blank">ISC2 AI for Cybersecurity Course</a></li>
+                    <li><a href="https://technextcon.com/best-online-courses-to-learn-ai-for-cybersecurity/" target="_blank">Best Online Courses to Learn AI for Cybersecurity in 2025</a></li>
+                    <li><a href="https://completeaitraining.com/blog/3-essential-ai-courses-for-cybersecurity-analysts-in-2025/" target="_blank">3 Essential AI Courses for Cybersecurity Analysts in 2025</a></li>
+                    <li><a href="https://www.eicta.iitk.ac.in/courses/gen-ai-in-cyber-security" target="_blank">Gen AI in Cybersecurity Course 2025 - EICTA, IIT Kanpur</a></li>
+                    <li><a href="https://mindgard.ai/blog/ai-security-training-courses-and-resources" target="_blank">AI Security Training Courses - Mindgard</a></li>
+                    <li><a href="https://www.techtarget.com/searchsecurity/tip/Top-AI-security-certifications-to-consider" target="_blank">Top AI security certifications to consider - TechTarget</a></li>
+                    <li><a href="https://www.modernsecurity.io/courses/ai-security-certification" target="_blank">AI Security Certification – Practical AI Security Training</a></li>
+                    <li><a href="https://www.infosectrain.com/courses/artificial-intelligence-ai-for-cyber-security-professionals-training/" target="_blank">AI-Powered Cybersecurity Training Course Online - InfosecTrain</a></li>
+                    <li><a href="https://www.coursera.org/specializations/generative-ai-for-cybersecurity-professionals" target="_blank">IBM Generative AI for Cybersecurity Professionals - Coursera</a></li>
+                    <li><a href="https://www.practical-devsecops.com/certified-ai-security-professional/" target="_blank">Certified AI Security Professional - Practical DevSecOps</a></li>
+                    <li><a href="https://www.deloitte.com/us/en/Industries/government-public/about/advanced-cyber-training.html" target="_blank">Deloitte Advanced Cyber Training</a></li>
+                    <li><a href="https://www.deloitte.com/us/en/services/consulting/services/ai-and-cybersecurity-solutions.html" target="_blank">Cyber AI Blueprints and Technology Services - Deloitte</a></li>
+                    <li><a href="https://www.isc2.org/Insights/2025/07/ISC2-Launches-AI-Certificate" target="_blank">ISC2 Launches AI Security Certificate</a></li>
+                    <li><a href="https://flatironschool.com/enterprise/deloitte-cyber-career-accelerator-2/" target="_blank">Deloitte Cyber Career Accelerator - Flatiron School</a></li>
+                    <li><a href="https://www.sans.org/cyber-security-courses/applied-data-science-machine-learning" target="_blank">SEC595: Applied Data Science and AI/ML - SANS Institute</a></li>
+                    <li><a href="https://www.udemy.com/course/the-complete-artificial-intelligence-for-cyber-security-2021/" target="_blank">The Complete Artificial Intelligence for Cyber Security - Udemy</a></li>
+                    <li><a href="https://www.pluralsight.com/courses/ai-machine-learning-cybersecurity" target="_blank">AI and Machine Learning in Cybersecurity - Pluralsight</a></li>
+                    <li><a href="https://www.sans.org/mlp/artificial-intelligence" target="_blank">AI Security Starts Here - SANS Institute</a></li>
+                    <li><a href="https://www.udemy.com/course/ai-cyber-security-mastery/" target="_blank">AI & Cyber Security Mastery 2026 - Udemy</a></li>
+                    <li><a href="https://socradar.io/blog/top-10-ai-cyber-security-trainings/" target="_blank">Top 10 AI Cyber Security Trainings - SOCRadar</a></li>
+                    <li><a href="https://lifelonglearning.jhu.edu/course/jhu-online-certificate-program-cybersecurity/" target="_blank">AI for Cybersecurity Certificate - Johns Hopkins University</a></li>
+                    <li><a href="https://medium.com/ai-security-hub/top-ai-security-youtube-videos-november-2025-5f09db69ca42" target="_blank">Top AI Security YouTube Videos - November 2025</a></li>
+                    <li><a href="https://www.classcentral.com/course/youtube-cybersecurity-trends-for-2025-and-beyond-416758" target="_blank">Cybersecurity Trends for 2025 and Beyond - IBM</a></li>
+                    <li><a href="https://zerotomastery.io/courses/ai-and-cybersecurity/" target="_blank">Learn AI and Cybersecurity - Zero To Mastery</a></li>
+                    <li><a href="https://www.giac.org/certifications/machine-learning-engineer-gmle/" target="_blank">GIAC Machine Learning Engineer Certification</a></li>
+                    <li><a href="https://professional.uchicago.edu/lp/professional-education/machine-learning-cybersecurity/rfi?language_content_entity=en" target="_blank">Machine Learning for Cybersecurity - UChicago</a></li>
+                    <li><a href="https://www.sans.org/cyber-security-skills-roadmap" target="_blank">Cybersecurity Roadmap Skills and Certifications - SANS</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p><strong>Document Prepared:</strong> December 2025</p>
+            <p><strong>Research Focus:</strong> AI Cybersecurity Training for Deloitte Senior Manager</p>
+            <p><strong>Next Update:</strong> Recommended quarterly review of new course offerings</p>
+        </footer>
+    </div>
+</body>
+</html>
