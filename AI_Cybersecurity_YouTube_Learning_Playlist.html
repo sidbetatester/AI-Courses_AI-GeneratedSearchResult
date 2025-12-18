@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & Cybersecurity YouTube Learning Playlist: Zero to Expert</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .meta-info {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .meta-info p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 15px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #1e3c72;
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h3 {
+            color: #2a5298;
+            font-size: 1.5em;
+            margin: 25px 0 15px 0;
+        }
+
+        h4 {
+            color: #34495e;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+        }
+
+        .level-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .beginner {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .intermediate {
+            background: #FF9800;
+            color: white;
+        }
+
+        .advanced {
+            background: #F44336;
+            color: white;
+        }
+
+        .expert {
+            background: #9C27B0;
+            color: white;
+        }
+
+        .phase-card {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .resource-item {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            transition: all 0.3s;
+        }
+
+        .resource-item:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .resource-item h4 {
+            margin-top: 0;
+            color: #1e3c72;
+        }
+
+        .resource-item ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .resource-item li {
+            margin: 5px 0;
+        }
+
+        .channel-badge {
+            background: #e74c3c;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .duration-badge {
+            background: #3498db;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            margin-left: 5px;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .stat-card h3 {
+            color: white;
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .stat-card p {
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #667eea;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #667eea;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 19px;
+            top: 25px;
+            width: 2px;
+            height: calc(100% + 10px);
+            background: #ddd;
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .tool-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .tool-card h4 {
+            margin-top: 0;
+            color: #1e3c72;
+        }
+
+        .highlight-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .highlight-box h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+            opacity: 0.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI & Cybersecurity YouTube Learning Playlist</h1>
+            <p>Complete Learning Path: Zero to Expert</p>
+            <p style="font-size: 1em; margin-top: 10px;">Curated for Deloitte Cyber Security Senior Manager</p>
+        </header>
+
+        <div class="meta-info">
+            <p><strong>Last Updated:</strong> December 18, 2025</p>
+            <p><strong>Total Learning Time:</strong> 180-200+ hours</p>
+            <p><strong>Skill Levels:</strong> Beginner → Intermediate → Advanced → Expert</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#beginner">Beginner</a></li>
+                <li><a href="#intermediate">Intermediate</a></li>
+                <li><a href="#advanced">Advanced</a></li>
+                <li><a href="#expert">Expert</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#tips">Learning Tips</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <section id="intro">
+                <h2>Introduction</h2>
+                <p>This comprehensive YouTube learning playlist has been curated through extensive research to guide cybersecurity professionals from zero knowledge to expert-level understanding of AI security. The playlist combines theoretical foundations with practical applications, focusing on content from credible sources and experienced practitioners.</p>
+
+                <h3>Target Audience</h3>
+                <ul>
+                    <li>Cybersecurity professionals transitioning into AI security</li>
+                    <li>Senior managers in consulting firms (especially Deloitte)</li>
+                    <li>Security architects exploring AI threat landscape</li>
+                    <li>Anyone seeking structured AI security education</li>
+                </ul>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>15+</h3>
+                        <p>YouTube Channels</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>200+</h3>
+                        <p>Video Hours</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>50+</h3>
+                        <p>Hands-on Labs</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>20+</h3>
+                        <p>Tools to Master</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="overview">
+                <h2>Learning Pathway Overview</h2>
+                <p>The learning journey is divided into four progressive levels:</p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3><span class="level-badge beginner">Beginner</span> Foundations</h3>
+                        <p><strong>Duration:</strong> 30-40 hours</p>
+                        <p>Understand basic cybersecurity concepts, AI fundamentals, and the intersection of both fields.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3><span class="level-badge intermediate">Intermediate</span> Application</h3>
+                        <p><strong>Duration:</strong> 40-50 hours</p>
+                        <p>Understand AI-specific threats, attack vectors, and defensive strategies.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3><span class="level-badge advanced">Advanced</span> Mastery</h3>
+                        <p><strong>Duration:</strong> 50-60 hours</p>
+                        <p>Master advanced attack techniques, defense strategies, and privacy-preserving AI.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3><span class="level-badge expert">Expert</span> Specialization</h3>
+                        <p><strong>Duration:</strong> 60+ hours</p>
+                        <p>Specialize in specific AI security domains, contribute to research, and lead organizational initiatives.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="beginner">
+                <h2>Beginner Level (Foundations) <span class="level-badge beginner">30-40 hours</span></h2>
+
+                <div class="phase-card">
+                    <h3>Phase 1: Cybersecurity Fundamentals (10-15 hours)</h3>
+
+                    <div class="resource-item">
+                        <h4>1. NetworkChuck <span class="channel-badge">4.3M+ subscribers</span></h4>
+                        <p><strong>Why:</strong> Makes complex topics accessible with energetic tutorials</p>
+                        <p><strong>Focus:</strong> Linux, ethical hacking, CompTIA certifications</p>
+                        <p><strong>Key Playlists:</strong></p>
+                        <ul>
+                            <li>Python for Cybersecurity</li>
+                            <li>Ethical Hacking Series</li>
+                            <li>Networking Fundamentals</li>
+                        </ul>
+                        <p><strong>Channel:</strong> @NetworkChuck</p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>2. Professor Messer</h4>
+                        <p><strong>Why:</strong> Gold standard for CompTIA certifications</p>
+                        <p><strong>Focus:</strong> Clear, concise breakdown of complex topics</p>
+                        <p><strong>Key Playlists:</strong></p>
+                        <ul>
+                            <li>CompTIA Security+ Training</li>
+                            <li>Network+ Certification</li>
+                        </ul>
+                        <p><strong>Channel:</strong> @professormesser</p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>3. The Cyber Mentor</h4>
+                        <p><strong>Why:</strong> Practical, affordable cybersecurity training</p>
+                        <p><strong>Focus:</strong> Penetration testing, ethical hacking</p>
+                        <p><strong>Key Playlists:</strong></p>
+                        <ul>
+                            <li>Practical Ethical Hacking</li>
+                            <li>Zero to Hero Series</li>
+                        </ul>
+                        <p><strong>Channel:</strong> @TCMSecurityAcademy</p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>4. HackerSploit</h4>
+                        <p><strong>Why:</strong> Comprehensive tutorials with structured approach</p>
+                        <p><strong>Focus:</strong> Penetration testing, Kali Linux</p>
+                        <p><strong>Key Series:</strong></p>
+                        <ul>
+                            <li>Ethical Hacking & Penetration Testing Complete Course</li>
+                            <li>TryHackMe Tutorials</li>
+                            <li>Web Application Penetration Testing</li>
+                        </ul>
+                        <p><strong>Channel:</strong> @HackerSploit</p>
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <h3>Phase 2: AI & Machine Learning Basics (15-20 hours)</h3>
+
+                    <div class="resource-item">
+                        <h4>MIT OpenCourseWare - Artificial Intelligence</h4>
+                        <p><strong>Course:</strong> 6.034 Artificial Intelligence</p>
+                        <p><strong>Content:</strong> Full-length lecture videos</p>
+                        <p><strong>Topics:</strong> Knowledge representation, problem solving, learning methods</p>
+                        <p><a href="https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/video_galleries/lecture-videos/" target="_blank">View Course</a></p>
+                        <p><strong>Why:</strong> Academic rigor from world-class institution</p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>Stanford CS230 Deep Learning</h4>
+                        <p><strong>Content:</strong> Lecture videos available</p>
+                        <p><strong>Topics:</strong> Neural networks, CNNs, RNNs, LSTM, optimization</p>
+                        <p><a href="https://cs230.stanford.edu/" target="_blank">View Course</a></p>
+                        <p><strong>Why:</strong> Industry-standard deep learning education</p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>Andrew Ng's Machine Learning Specialization</h4>
+                        <p><strong>Platform:</strong> Coursera (with YouTube previews)</p>
+                        <p><strong>Topics:</strong> Supervised learning, neural networks, practical ML</p>
+                        <p><a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank">View Specialization</a></p>
+                        <p><strong>Why:</strong> Created by AI pioneer, excellent for beginners</p>
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <h3>Phase 3: Introduction to AI Security (5-10 hours)</h3>
+
+                    <div class="resource-item">
+                        <h4>IBM Cybersecurity Trends for 2025 and Beyond <span class="duration-badge">29 min</span></h4>
+                        <p><strong>Topic:</strong> AI and evolving threat landscape</p>
+                        <p><a href="https://www.classcentral.com/course/youtube-cybersecurity-trends-for-2025-and-beyond-416758" target="_blank">Watch Video</a></p>
+                        <p><strong>Why:</strong> Current trends from industry leader</p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>Great Learning: Ultimate 2024 Cybersecurity Tutorial <span class="duration-badge">4 hours</span></h4>
+                        <p><strong>Content:</strong> Fundamentals to advanced concepts</p>
+                        <p><a href="https://www.classcentral.com/course/youtube-the-ultimate-2024-cyber-security-tutorial-cybersecurity-for-beginners-cyber-security-in-4-hours-323586" target="_blank">Watch Tutorial</a></p>
+                        <p><strong>Why:</strong> Comprehensive overview</p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>Top AI Security YouTube Videos - November 2025</h4>
+                        <p><strong>Content:</strong> Curated monthly collection from AI Security Hub</p>
+                        <p><strong>Topics:</strong> Latest AI security talks from conferences</p>
+                        <p><a href="https://medium.com/ai-security-hub/top-ai-security-youtube-videos-november-2025-5f09db69ca42" target="_blank">View Collection</a></p>
+                        <p><strong>Why:</strong> Stay current with latest research</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Key Concepts to Master</h4>
+                    <ul>
+                        <li>Basic machine learning terminology</li>
+                        <li>Difference between AI, ML, and Deep Learning</li>
+                        <li>Common cybersecurity frameworks (NIST, ISO 27001)</li>
+                        <li>Introduction to AI threat landscape</li>
+                        <li>Basic Python programming for security</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="intermediate">
+                <h2>Intermediate Level (Application) <span class="level-badge intermediate">40-50 hours</span></h2>
+
+                <div class="phase-card">
+                    <h3>Phase 4: AI Threat Landscape (15-20 hours)</h3>
+
+                    <div class="resource-item">
+                        <h4>Secure Code Warrior - AI/LLM Security Video Series</h4>
+                        <p><strong>Format:</strong> 12-week YouTube series (weekly episodes)</p>
+                        <p><strong>Topics Covered:</strong></p>
+                        <ul>
+                            <li>AI Coding Risks and LLM Dangers</li>
+                            <li>Sensitive Information Disclosure</li>
+                            <li>Supply Chain Risks</li>
+                            <li>Data and Model Poisoning</li>
+                            <li>Excessive AI Autonomy</li>
+                            <li>Secure AI-Assisted Development</li>
+                        </ul>
+                        <p><strong>Channel:</strong> @SecureCodeWarrior</p>
+                        <p><a href="https://www.securecodewarrior.com/article/ai-llm-security-video-series-all-episodes-updated-weekly" target="_blank">View Series</a></p>
+                        <p><strong>Why:</strong> Structured, professional content updated weekly with 130+ AI/LLM learning activities</p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>NVIDIA - Exploring Adversarial Machine Learning</h4>
+                        <p><strong>Format:</strong> Hands-on course</p>
+                        <p><strong>Content:</strong> Run code, experiment with attacks</p>
+                        <p><strong>Topics:</strong></p>
+                        <ul>
+                            <li>Attack techniques on ML models</li>
+                            <li>Defense mechanisms</li>
+                            <li>Real-world implications</li>
+                        </ul>
+                        <p><a href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-DS-03+V1" target="_blank">Take Course</a></p>
+                        <p><strong>Why:</strong> Interactive, practical learning</p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>University of Melbourne - Getting Robust <span class="duration-badge">49 min</span></h4>
+                        <p><strong>Presenter:</strong> Dr. Andrew Cullen</p>
+                        <p><strong>Topic:</strong> Securing Neural Networks Against Adversarial Attacks</p>
+                        <p><a href="https://www.classcentral.com/course/youtube-getting-robust-securing-neural-networks-against-adversarial-attacks-178971" target="_blank">Watch Seminar</a></p>
+                        <p><strong>Why:</strong> Academic perspective on defensive techniques</p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>Prompt Injection & Jailbreaking Resources</h4>
+                        <p><strong>Key Learning:</strong></p>
+                        <ul>
+                            <li>OWASP named this #1 security threat to LLMs in 2023</li>
+                            <li>Overriding AI instructions with user input</li>
+                            <li>Direct and indirect injection techniques</li>
+                        </ul>
+                        <p><strong>Resources:</strong></p>
+                        <ul>
+                            <li><a href="https://learnprompting.org/docs/prompt_hacking/injection" target="_blank">LearnPrompting.org Tutorial</a></li>
+                            <li><a href="https://www.paloaltonetworks.com/cyberpedia/what-is-a-prompt-injection-attack" target="_blank">Palo Alto Networks Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <h3>Phase 5: AI Red Teaming & Testing (15-20 hours)</h3>
+
+                    <div class="resource-item">
+                        <h4>Microsoft AI Red Teaming 101 Series</h4>
+                        <p><strong>Format:</strong> 10-episode modular video series</p>
+                        <p><strong>Platform:</strong> Microsoft Learn</p>
+                        <p><strong>Episodes:</strong></p>
+                        <ol>
+                            <li>Introduction to AI Red Teaming</li>
+                            <li>Model Architecture Fundamentals</li>
+                            <li>Single-Turn Attack Techniques</li>
+                            <li>Multi-Turn Adversarial Techniques</li>
+                            <li>Jailbreaking LLMs</li>
+                            <li>Prompt Injection Deep Dive</li>
+                            <li>Indirect Prompt Injection</li>
+                            <li>Automating AI Red Teaming with PyRIT</li>
+                            <li>Automating Single-Turn Attacks</li>
+                            <li>Automating Multi-Turn Attacks</li>
+                        </ol>
+                        <p><a href="https://learn.microsoft.com/en-us/security/ai-red-team/training" target="_blank">Access Series</a></p>
+                        <p><a href="https://github.com/microsoft/AI-Red-Teaming-Playground-Labs" target="_blank">GitHub Labs</a></p>
+                        <p><strong>Tool:</strong> PyRIT (Python Risk Identification Tool)</p>
+                        <p><strong>Why:</strong> Official Microsoft training, hands-on labs, industry-standard tools</p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>Donato Capitella - LLM Chronicles YouTube Series</h4>
+                        <p><strong>Background:</strong> Principal Security Consultant at WithSecure, 10+ years experience, 300,000+ students taught</p>
+                        <p><strong>Channel:</strong> @donatocapitella</p>
+                        <p><strong>Website:</strong> llm-chronicles.com</p>
+
+                        <p><strong>Key Videos:</strong></p>
+                        <ul>
+                            <li><strong>Building LLM Applications Securely</strong> <span class="duration-badge">57 min</span><br>
+                                Security risks, mitigation strategies, prompt injection vulnerabilities<br>
+                                <a href="https://www.classcentral.com/course/youtube-webinar-building-llm-applications-in-a-secure-way-withsecure-409535" target="_blank">Watch</a>
+                            </li>
+                            <li><strong>Spikee Tutorial Series</strong><br>
+                                Open-source LLM testing tool, prompt injection vs jailbreaking<br>
+                                <a href="https://www.classcentral.com/course/youtube-spikee-1-llm-benchmarking-testing-tool-for-prompt-injection-427714" target="_blank">Watch</a>
+                            </li>
+                            <li><strong>Prompt Injection - Banking LLM Agent</strong><br>
+                                Compromising GPT-4 + Langchain agents, real-world attacks<br>
+                                <a href="https://www.classcentral.com/course/youtube-prompt-injection-jailbreaking-a-banking-llm-agent-gpt-4-langchain-409548" target="_blank">Watch</a>
+                            </li>
+                            <li><strong>Prompt Injection in LLM Agents</strong><br>
+                                ReAct framework vulnerabilities, security best practices<br>
+                                <a href="https://www.classcentral.com/course/youtube-prompt-injection-in-llm-agents-react-langchain-409554" target="_blank">Watch</a>
+                            </li>
+                        </ul>
+                        <p><strong>Why:</strong> Practical, hands-on tutorials from experienced practitioner</p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>John Hammond - Ethical Hacking & AI Security</h4>
+                        <p><strong>Background:</strong></p>
+                        <ul>
+                            <li>Cybersecurity researcher at Huntress</li>
+                            <li>Former DoD Cyber Training Academy instructor</li>
+                            <li>Certifications: OSCP, OSCE, OSWE, CEH, and more</li>
+                        </ul>
+                        <p><strong>Content Focus:</strong></p>
+                        <ul>
+                            <li>CTF walkthroughs</li>
+                            <li>Malware analysis</li>
+                            <li>Dark web threats</li>
+                            <li>AI in security operations</li>
+                        </ul>
+                        <p><strong>Platform:</strong> Just Hacking Training</p>
+                        <p><strong>Why:</strong> Real-world expertise, teaches adversarial mindset</p>
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <h3>Phase 6: MLSecOps & Secure AI Deployment (10-15 hours)</h3>
+
+                    <div class="resource-item">
+                        <h4>Cloud Security Alliance - Building AI Security In</h4>
+                        <p><strong>Topic:</strong> MLSecOps in Practice</p>
+                        <p><strong>Content:</strong> Securing AI/ML systems lifecycle</p>
+                        <p><a href="https://www.classcentral.com/course/youtube-building-ai-security-in-mlsecops-in-practice-350914" target="_blank">Watch Video</a></p>
+                        <p><strong>Why:</strong> Industry-standard framework</p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>OpenSSF MLSecOps Whitepaper</h4>
+                        <p><strong>Title:</strong> Practical Guide for Building Robust AI/ML Pipeline Security</p>
+                        <p><a href="https://openssf.org/wp-content/uploads/2025/08/OpenSSF_MLSecOps_Whitepaper.pdf" target="_blank">Download PDF</a></p>
+                        <p><strong>Why:</strong> Open-source security foundation guidelines</p>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h4>Key Topics</h4>
+                        <ul>
+                            <li>Dependency management</li>
+                            <li>Model validation</li>
+                            <li>Supply chain risks</li>
+                            <li>Runtime protection</li>
+                            <li>Anomaly detection</li>
+                            <li>CI/CD for ML models</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="advanced">
+                <h2>Advanced Level (Mastery) <span class="level-badge advanced">50-60 hours</span></h2>
+
+                <div class="phase-card">
+                    <h3>Phase 7: Advanced Attack Techniques (20-25 hours)</h3>
+
+                    <div class="resource-item">
+                        <h4>Model Extraction & Reverse Engineering</h4>
+                        <p><strong>Key Concepts:</strong></p>
+                        <ul>
+                            <li>Distillation attacks on cloud-based models</li>
+                            <li>On-device model extraction</li>
+                            <li>Model inversion attacks</li>
+                            <li>Membership inference</li>
+                        </ul>
+                        <p><strong>Resources:</strong></p>
+                        <ul>
+                            <li><a href="https://dl.acm.org/doi/10.1145/3574159" target="_blank">ACM Tutorial: Robust Deep Learning</a></li>
+                            <li><a href="https://www.schneier.com/blog/archives/2023/10/model-extraction-attack-on-neural-networks.html" target="_blank">Schneier on Security</a></li>
+                        </ul>
+                        <p><strong>Tools:</strong> Ghidra, IDA for decompilation; analyzing .onnx, .tflite, .h5 files</p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>Data & Model Poisoning</h4>
+                        <p><strong>Attack Types:</strong></p>
+                        <ul>
+                            <li>Training data poisoning</li>
+                            <li>Backdoor attacks</li>
+                            <li>Label flipping</li>
+                            <li>Gradient attacks</li>
+                        </ul>
+                        <p><strong>Defense Mechanisms:</strong></p>
+                        <ul>
+                            <li>Data validation and sanitization</li>
+                            <li>Anomaly detection</li>
+                            <li>Model inspection (NeuronInspect)</li>
+                            <li>RECESS defense method</li>
+                        </ul>
+                        <p><strong>Resources:</strong></p>
+                        <ul>
+                            <li><a href="https://owasp.org/www-project-machine-learning-security-top-10/docs/ML10_2023-Model_Poisoning" target="_blank">OWASP ML Security Top 10</a></li>
+                            <li><a href="https://www.crowdstrike.com/en-us/cybersecurity-101/cyberattacks/data-poisoning/" target="_blank">CrowdStrike Guide</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>Deepfake Detection & Defense</h4>
+                        <p><strong>YouTube's 2025 Protection:</strong></p>
+                        <ul>
+                            <li>AI likeness-detection system</li>
+                            <li>Face template matching</li>
+                            <li>Content Detection tab</li>
+                        </ul>
+                        <p><strong>Industry Tools:</strong></p>
+                        <ul>
+                            <li>Deepware Scanner</li>
+                            <li>Sensity AI</li>
+                            <li>Microsoft Video Authenticator</li>
+                            <li>Reality Defender</li>
+                            <li>Blood flow analysis (96% accuracy)</li>
+                        </ul>
+                        <p><strong>Resources:</strong></p>
+                        <ul>
+                            <li><a href="https://www.cnbc.com/2025/12/02/youtube-ai-biometric-data-creator-deepfake.html" target="_blank">CNBC: YouTube AI Tool</a></li>
+                            <li><a href="https://socradar.medium.com/what-are-the-best-ai-deepfake-detection-tools-in-2025-8397a2ca8c22" target="_blank">Best Detection Tools 2025</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <h3>Phase 8: Privacy-Preserving AI (15-20 hours)</h3>
+
+                    <div class="resource-item">
+                        <h4>Federated Learning</h4>
+                        <p><strong>Core Concepts:</strong></p>
+                        <ul>
+                            <li>Decentralized ML training</li>
+                            <li>Data remains local</li>
+                            <li>Privacy challenges</li>
+                            <li>Differential privacy integration</li>
+                        </ul>
+                        <p><strong>Resources:</strong></p>
+                        <ul>
+                            <li><a href="https://flower.ai/docs/framework/explanation-differential-privacy.html" target="_blank">Flower Framework: Differential Privacy</a></li>
+                            <li><a href="https://arxiv.org/abs/1911.00222" target="_blank">ArXiv: Federated Learning with DP</a></li>
+                        </ul>
+                        <p><strong>Applications:</strong> Healthcare, financial fraud detection, mobile keyboard prediction</p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>Homomorphic Encryption</h4>
+                        <p><strong>Advanced Concepts:</strong></p>
+                        <ul>
+                            <li>Computation on encrypted data</li>
+                            <li>Fully Homomorphic Encryption (FHE)</li>
+                            <li>Partially Homomorphic Encryption (PHE)</li>
+                        </ul>
+                        <p><strong>Real-World Applications:</strong></p>
+                        <ul>
+                            <li>Apple's ML ecosystem</li>
+                            <li>Secure cloud ML inference</li>
+                            <li>Privacy-preserving predictions</li>
+                        </ul>
+                        <p><strong>Resources:</strong></p>
+                        <ul>
+                            <li><a href="https://machinelearning.apple.com/research/homomorphic-encryption" target="_blank">Apple ML Research</a></li>
+                            <li><a href="https://www.nature.com/articles/s42256-025-01135-2" target="_blank">Nature: Empowering AI with HE</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>Zero-Knowledge Proofs (ZKP)</h4>
+                        <p><strong>Foundations:</strong></p>
+                        <ul>
+                            <li>Proving statements without revealing information</li>
+                            <li>ZK-SNARKs and ZK-STARKs</li>
+                            <li>Zero-Knowledge Machine Learning (ZKML)</li>
+                        </ul>
+                        <p><strong>YouTube Channel:</strong> Zero Knowledge by Anna Rose (10K+ subscribers, 700+ videos)</p>
+                        <p><strong>Resources:</strong></p>
+                        <ul>
+                            <li><a href="https://github.com/matter-labs/awesome-zero-knowledge-proofs" target="_blank">GitHub: awesome-zero-knowledge-proofs</a></li>
+                            <li><a href="https://cloudsecurityalliance.org/blog/2024/09/20/leveraging-zero-knowledge-proofs-in-machine-learning-and-llms-enhancing-privacy-and-security" target="_blank">CSA: ZKPs in ML</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <h3>Phase 9: Conference Talks & Research (15-20 hours)</h3>
+
+                    <div class="resource-item">
+                        <h4>Top Security Conferences</h4>
+
+                        <p><strong>Black Hat USA</strong></p>
+                        <ul>
+                            <li>Latest AI security research</li>
+                            <li>Live feeds on YouTube</li>
+                            <li>2025 Highlights: Claude in CTF competitions, Promptware attacks</li>
+                            <li><a href="https://www.blackhat.com" target="_blank">Visit Site</a></li>
+                        </ul>
+
+                        <p><strong>DEF CON</strong></p>
+                        <ul>
+                            <li>Hacker convention</li>
+                            <li>Cutting-edge security talks</li>
+                            <li>AI Content: Self-improving phishing bots, agentic AI security</li>
+                            <li><a href="https://defcon.org" target="_blank">Visit Site</a></li>
+                        </ul>
+
+                        <p><strong>BSides</strong></p>
+                        <ul>
+                            <li>Community-driven conferences</li>
+                            <li>Technical deep-dives</li>
+                            <li>Grassroots research</li>
+                        </ul>
+
+                        <p><strong>Curated Collections:</strong></p>
+                        <ul>
+                            <li><a href="https://tldrsec.com/p/tldr-every-ai-talk-bsideslv-blackhat-defcon-2024" target="_blank">TL;DR Sec: Every AI Talk 2024</a></li>
+                            <li>AI Security Hub - Monthly compilations (30+ talks)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="expert">
+                <h2>Expert Level (Specialization) <span class="level-badge expert">60+ hours</span></h2>
+
+                <div class="phase-card">
+                    <h3>Phase 10: AI Governance & Compliance (20-25 hours)</h3>
+
+                    <div class="resource-item">
+                        <h4>EU AI Act</h4>
+                        <p><strong>Risk Categories:</strong></p>
+                        <ul>
+                            <li>Unacceptable risk (banned)</li>
+                            <li>High-risk (regulated)</li>
+                            <li>Minimal risk (unregulated)</li>
+                        </ul>
+                        <p><strong>Resources:</strong></p>
+                        <ul>
+                            <li><a href="https://artificialintelligenceact.eu/" target="_blank">EU AI Act Official</a></li>
+                            <li><a href="https://iapp.org/resources/article/top-impacts-eu-ai-act-leveraging-gdpr-compliance/" target="_blank">IAPP: Top 10 Impacts</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>GDPR and AI</h4>
+                        <p><strong>Key Considerations:</strong></p>
+                        <ul>
+                            <li>Personal data processing in AI</li>
+                            <li>Right to explanation</li>
+                            <li>Data minimization</li>
+                            <li>Automated decision-making</li>
+                        </ul>
+                        <p><a href="https://www.exabeam.com/explainers/gdpr-compliance/the-intersection-of-gdpr-and-ai-and-6-compliance-best-practices/" target="_blank">Exabeam: 6 Best Practices</a></p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>AI Compliance Frameworks</h4>
+                        <ul>
+                            <li>NIST AI Risk Management Framework</li>
+                            <li>ISO/IEC 42001 (AI Management System)</li>
+                            <li>OWASP AI Security and Privacy Guide</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <h3>Phase 11: Explainable AI (XAI) for Security (15-20 hours)</h3>
+
+                    <div class="resource-item">
+                        <h4>XAI Fundamentals</h4>
+                        <p><strong>Techniques:</strong></p>
+                        <ul>
+                            <li>LIME (Local Interpretable Model-agnostic Explanations)</li>
+                            <li>SHAP (SHapley Additive exPlanations)</li>
+                            <li>Attention mechanisms</li>
+                            <li>Saliency maps</li>
+                        </ul>
+                        <p><strong>Resources:</strong></p>
+                        <ul>
+                            <li><a href="https://www.ibm.com/think/topics/explainable-ai" target="_blank">IBM: What is XAI?</a></li>
+                            <li><a href="https://www.geeksforgeeks.org/artificial-intelligence/explainable-artificial-intelligencexai/" target="_blank">GeeksforGeeks Tutorial</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>XAI in Cybersecurity</h4>
+                        <p><strong>Applications:</strong></p>
+                        <ul>
+                            <li>Intrusion Detection Systems (IDS)</li>
+                            <li>Threat intelligence</li>
+                            <li>Incident investigation</li>
+                            <li>Security operations</li>
+                        </ul>
+                        <p><a href="https://github.com/ivoafonsobispo/XAI-Cybersecurity" target="_blank">GitHub: XAI-Cybersecurity Project</a></p>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>Academic Tutorials</h4>
+                        <ul>
+                            <li><a href="https://xaitutorial2021.github.io/" target="_blank">XAI Tutorial 2021</a></li>
+                            <li><a href="https://xaitutorial2022.github.io/" target="_blank">XAI Tutorial 2022</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <h3>Phase 12: Advanced Specializations (25-30 hours)</h3>
+
+                    <div class="resource-item">
+                        <h4>Choose Your Path:</h4>
+
+                        <p><strong>1. AI Offensive Security</strong></p>
+                        <ul>
+                            <li>Automated vulnerability discovery</li>
+                            <li>AI-powered exploit generation</li>
+                            <li>Intelligent phishing campaigns</li>
+                        </ul>
+
+                        <p><strong>2. AI Defensive Security</strong></p>
+                        <ul>
+                            <li>AI-powered threat detection</li>
+                            <li>Automated incident response</li>
+                            <li>Technologies: IBM QRadar, Darktrace, CrowdStrike Falcon</li>
+                        </ul>
+
+                        <p><strong>3. LLM Security Specialization</strong></p>
+                        <ul>
+                            <li>SANS SEC545: GenAI and LLM Application Security</li>
+                            <li>SANS SEC495: Building & Securing RAG</li>
+                            <li>Agent security, RAG vulnerabilities</li>
+                        </ul>
+                        <p><strong>Resources:</strong></p>
+                        <ul>
+                            <li><a href="https://www.sans.org/cyber-security-courses/genai-llm-application-security" target="_blank">SANS SEC545</a></li>
+                            <li><a href="https://www.sans.org/cyber-security-courses/leveraging-llms-building-securing-rag" target="_blank">SANS SEC495</a></li>
+                            <li><a href="https://www.udemy.com/course/owasp-llm-security-learnit/" target="_blank">Udemy: OWASP Top 10 LLM 2025</a></li>
+                        </ul>
+
+                        <p><strong>4. AI Supply Chain Security</strong></p>
+                        <ul>
+                            <li>Model provenance</li>
+                            <li>Third-party model risks</li>
+                            <li>Training data integrity</li>
+                        </ul>
+
+                        <p><strong>5. AI for Threat Intelligence</strong></p>
+                        <ul>
+                            <li>Predictive threat modeling</li>
+                            <li>Automated threat hunting</li>
+                            <li>APT detection</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="resources">
+                <h2>Supplementary Resources</h2>
+
+                <h3>Essential Tools & Platforms</h3>
+
+                <div class="tool-grid">
+                    <div class="tool-card">
+                        <h4>Practice Platforms</h4>
+                        <ul>
+                            <li>TryHackMe</li>
+                            <li>Hack The Box</li>
+                            <li>LetsDefend</li>
+                            <li>OWASP Juice Shop</li>
+                        </ul>
+                    </div>
+
+                    <div class="tool-card">
+                        <h4>AI Security Tools</h4>
+                        <ul>
+                            <li>PyRIT (Microsoft)</li>
+                            <li>Spikee</li>
+                            <li>ART (IBM)</li>
+                            <li>CleverHans</li>
+                            <li>Foolbox</li>
+                        </ul>
+                    </div>
+
+                    <div class="tool-card">
+                        <h4>GitHub Repositories</h4>
+                        <ul>
+                            <li><a href="https://github.com/PromptLabs/Prompt-Hacking-Resources" target="_blank">Prompt Hacking</a></li>
+                            <li><a href="https://github.com/microsoft/AI-Red-Teaming-Playground-Labs" target="_blank">AI Red Teaming Labs</a></li>
+                            <li><a href="https://github.com/Azure/PyRIT" target="_blank">PyRIT</a></li>
+                            <li><a href="https://github.com/dair-ai/ML-YouTube-Courses" target="_blank">ML YouTube Courses</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tool-card">
+                        <h4>Standards & Docs</h4>
+                        <ul>
+                            <li><a href="https://genai.owasp.org/resource/genai-red-teaming-guide/" target="_blank">OWASP GenAI Guide</a></li>
+                            <li><a href="https://media.defense.gov/2024/apr/15/2003439257/-1/-1/0/csi-deploying-ai-systems-securely.pdf" target="_blank">NSA/CISA Guidance</a></li>
+                            <li>NIST AI RMF</li>
+                            <li>ISO/IEC 42001</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>All YouTube Channels</h3>
+
+                <div class="resource-item">
+                    <h4>Beginner-Friendly</h4>
+                    <ul>
+                        <li>NetworkChuck - @NetworkChuck</li>
+                        <li>Professor Messer - @professormesser</li>
+                        <li>The Cyber Mentor - @TCMSecurityAcademy</li>
+                        <li>HackerSploit - @HackerSploit</li>
+                        <li>John Hammond</li>
+                    </ul>
+                </div>
+
+                <div class="resource-item">
+                    <h4>AI & ML Education</h4>
+                    <ul>
+                        <li>DeepLearning.AI</li>
+                        <li>MIT OpenCourseWare</li>
+                        <li>Stanford Online</li>
+                    </ul>
+                </div>
+
+                <div class="resource-item">
+                    <h4>AI Security Specialists</h4>
+                    <ul>
+                        <li>Donato Capitella - @donatocapitella</li>
+                        <li>Secure Code Warrior - @SecureCodeWarrior</li>
+                        <li>Zero Knowledge - Anna Rose</li>
+                        <li>AI Security Hub</li>
+                    </ul>
+                </div>
+
+                <div class="resource-item">
+                    <h4>Corporate & Research</h4>
+                    <ul>
+                        <li>Microsoft Security</li>
+                        <li>IBM Security</li>
+                        <li>OWASP Foundation</li>
+                        <li>NVIDIA Deep Learning</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="tips">
+                <h2>Learning Tips</h2>
+
+                <div class="phase-card">
+                    <h3>For Maximum Effectiveness</h3>
+
+                    <div class="resource-item">
+                        <h4>1. Structured Learning</h4>
+                        <ul>
+                            <li>Follow the progression: Beginner → Intermediate → Advanced → Expert</li>
+                            <li>Don't skip foundational content</li>
+                            <li>Complete hands-on labs for each topic</li>
+                            <li>Take notes and create summaries</li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>2. Practical Application</h4>
+                        <ul>
+                            <li>Set up a home lab environment</li>
+                            <li>Practice on CTF platforms weekly</li>
+                            <li>Build your own vulnerable AI applications</li>
+                            <li>Test security tools hands-on</li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>3. Stay Current</h4>
+                        <ul>
+                            <li>Subscribe to all recommended YouTube channels</li>
+                            <li>Enable notifications for new videos</li>
+                            <li>Follow security researchers on Twitter/X</li>
+                            <li>Read weekly security newsletters</li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-item">
+                        <h4>4. Time Management</h4>
+                        <ul>
+                            <li>Dedicate 1-2 hours daily</li>
+                            <li>Weekend deep-dive sessions</li>
+                            <li>Review previous topics weekly</li>
+                            <li>Take breaks to avoid burnout</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <h3>Recommended Study Schedule</h3>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Months 1-2: Beginner Level</h4>
+                            <p>Cybersecurity basics, AI/ML fundamentals, intro to AI security</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <h4>Months 3-4: Intermediate Level</h4>
+                            <p>AI threat landscape, red teaming basics, MLSecOps foundations</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <h4>Months 5-7: Advanced Level</h4>
+                            <p>Advanced attacks, privacy-preserving AI, conference research</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <h4>Months 8-12: Expert Level</h4>
+                            <p>Choose specialization, deep research, practical projects, certifications</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Assessment Checkpoints</h4>
+                    <p><strong>After Beginner:</strong> Can you explain common ML algorithms? Do you understand basic cybersecurity concepts?</p>
+                    <p><strong>After Intermediate:</strong> Can you perform basic prompt injection attacks? Do you understand OWASP Top 10 for LLMs?</p>
+                    <p><strong>After Advanced:</strong> Can you implement privacy-preserving techniques? Do you understand model extraction defenses?</p>
+                    <p><strong>After Expert:</strong> Can you lead AI security initiatives? Do you contribute to security research?</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Conclusion</h2>
+                <p>This comprehensive YouTube learning playlist provides a structured path from zero to expert in AI cybersecurity. The journey requires dedication, consistent practice, and hands-on experience.</p>
+
+                <div class="highlight-box">
+                    <h4>Remember:</h4>
+                    <ul>
+                        <li><strong>Security is a mindset:</strong> Always think adversarially</li>
+                        <li><strong>Stay updated:</strong> AI security evolves rapidly</li>
+                        <li><strong>Practice ethically:</strong> Only test authorized systems</li>
+                        <li><strong>Share knowledge:</strong> Help others learn</li>
+                        <li><strong>Never stop learning:</strong> Technology constantly changes</li>
+                    </ul>
+                </div>
+
+                <h3>Next Steps</h3>
+                <ol>
+                    <li>Bookmark this guide</li>
+                    <li>Subscribe to all recommended channels</li>
+                    <li>Set up your learning environment</li>
+                    <li>Start with Phase 1 immediately</li>
+                    <li>Track your progress</li>
+                    <li>Join the community</li>
+                </ol>
+
+                <div style="text-align: center; margin: 40px 0;">
+                    <a href="#intro" class="btn">Back to Top</a>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p><strong>Document Version:</strong> 1.0</p>
+            <p><strong>Created:</strong> December 18, 2025</p>
+            <p><strong>For:</strong> Deloitte Cyber Security Senior Manager</p>
+            <p><strong>Compiled by:</strong> AI Research Assistant</p>
+            <p style="margin-top: 20px;"><strong>License:</strong> Educational Use Only</p>
+            <p><strong>Updates:</strong> Check sources regularly for latest content</p>
+        </footer>
+    </div>
+</body>
+</html>
